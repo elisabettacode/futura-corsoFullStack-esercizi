@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Menù</title>
+        <meta charset="UTF-8">
+        <meta rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Componi il tuo menù</h1>
+        <p>Componi il tuo menù selezionando un primo e un secondo fra le opzioni disponibili.
+        <br> 
+        Clicca su "Ordina" per visualizzare il riepilogo e il prezzo del tuo ordine.</p>
+        <form action="menu.php" method="get">
+            <label for="primo">Scegli un primo:</label>
+            <br>
+            <select id="primo" name="primo">
+                <option value="spaghetti">Spaghetti cacio e pepe</option>
+                <option value="risotto">Risotto ai funghi</option>
+                <option value="tortelloni">Tortelloni burro e salvia</option>
+            </select>
+            <br>
+            <label for="secondo">Scegli un secondo:</label>
+            <br>
+            <select id="secondo" name="secondo">
+                <option value="cotoletta">Cotoletta</option>
+                <option value="polpette">Polpette al sugo</option>
+                <option value="arrosto">Arrosto</option>
+            </select>
+            <br>
+            <input type="submit" value="Ordina">
+        </form>
+    </body>
+</html>
