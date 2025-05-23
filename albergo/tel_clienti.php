@@ -98,9 +98,9 @@
 
 
         //perchè impostando la condizione isset() anche se ho il campo vuoto mi restituisce true e non esegue dalla 109 ?
-        // se la condizione è $_POST['id']!= NULL funziona!
+        // isset() verifica che esiste, empty() verifica che sia vuota
 
-        if( isset($_POST['id']) ) {
+        if( isset($_POST['id']) && (!empty($_POST['id']))) {
             echo '<pre>';
             echo '<p>Nella stanza numero ' . $_POST['id'] . ' alloggia ' . $contatti_clienti[$_POST['id']]["nome"] . '.</p>';
             echo '<p>Per chiamare digita: ' . $contatti_clienti[$_POST['id']]["telefono"] . '</p>';
