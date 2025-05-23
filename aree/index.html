@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Calcola le aree</title>
+        <meta charset="UTF-8">
+        <meta rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Calcola le aree</h1>
+        <p>Seleziona la figura geometrica fra quelle disponibili e inserisci i valori necessari per il calcolo.
+        <br> 
+        Clicca su "Calcola" per visualizzare il risultato.</p>
+        <form action="area.php" method="get">
+            <label for="figura">Scegli la figura geometrica:</label>
+            <br>
+            <select id="figura" name="figura">
+                <option value="triangolo">Triangolo</option>
+                <option value="rettangolo">Rettangolo</option>
+                <option value="cerchio">Cerchio</option>
+            </select>
+            <br>
+            <label for="raggio">Inserisci il raggio:</label>
+            <br>
+            <input type="text" id="raggio" name="raggio">
+            <br>
+            <label for="a">Inserisci il lato a:</label>
+            <br>
+            <input type="text" id="a" name="a">
+            <br>
+            <label for="b">Inserisci il lato b:</label>
+            <br>
+            <input type="text" id="b" name="b">
+            <br>
+            <input type="submit" value="Calcola">
+        </form>
+    </body>
+</html>
