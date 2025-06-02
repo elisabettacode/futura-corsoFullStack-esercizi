@@ -40,7 +40,7 @@ foreach ($pagine3 as $key => $value) {
 $contenuto3 = str_replace('{{ModelloSelezionato}}', $modelli[$_GET['modello']], $contenuto3); 
 $contenuto3 = str_replace('{{AllestimentoSelezionato}}', $allestimenti[$_GET['allestimento']], $contenuto3); 
 
-$modello = $_GET['modello'];
+
 $allestimento =  $_GET['allestimento'];
 
 $listino = $prezzi[$modello];
