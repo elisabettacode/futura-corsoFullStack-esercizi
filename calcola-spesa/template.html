@@ -1,0 +1,20 @@
+<DOCTYPE!html>
+<html>
+<head>
+<title>Calcola Spesa</title>
+<meta charset="UTF_8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Calcola Spesa</h1>
+<p>Inserisci nome e importo delle tue spese.<br>Clicca su aggiungi per visualizzare il totale.</p>
+<form method="post" action="index.php">
+<input type="text" name="nome" placeholder="Nome" required>
+<input type="text" name="importo" placeholder="Importo" required>
+<br>
+<input type="submit" value="Aggiungi">
+</form>
+<ul>{{lista}}</ul>
+<p><strong>Totale:</strong> {{totale}} €</p>
+</body>
+</html>

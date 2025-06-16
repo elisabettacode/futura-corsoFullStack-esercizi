@@ -1,0 +1,24 @@
+<DOCTYPE!html>
+<html>
+<head>
+<title>Classifica Campionato</title>
+<meta charset="UTF_8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Classifica Campionato</h1>
+<p>Inserisci nome e punti delle squadre del campionato e clicca su Conferma.<br>Inserisci almeno 5 squadre per visualizzare la squadra vincitrice e quelle retrocesse.</p>
+<form method="post" action="index.php">
+<input type="text" name="squadra" placeholder="Squadra" required>
+<input type="text" name="punti" placeholder="Punti" required>
+<br>
+<input type="submit" value="Conferma">
+</form>
+<h2>Classifica:</h2>
+<ul>{{lista}}</ul>
+<h2>Prima classificata:</h2>
+<p>{{prima}}</p>
+<h2>Squadre retrocesse:</h2>
+<p>{{retrocesse}}</p>
+</body>
+</html>
