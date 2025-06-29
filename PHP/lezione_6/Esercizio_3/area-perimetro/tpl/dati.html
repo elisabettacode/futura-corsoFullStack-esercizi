@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>{{title}}</title>
+        <meta charset="UFT-8">
+        <meta rel="stilesheet" href="style.css">
+    </head>
+    <body>
+        <h1>{{h1}}</h1>
+        <p>{{contenuto}}</p>
+        <form action="output.php" method="get">
+            {{form}}
+            <input type="hidden" name="figura" value="{{selezione}}">
+            <select id="calcolo" name="calcolo">{{select_calcolo}}</select>
+            <br>
+            <input type="submit" value="Calcola">
+        </form>
+    </body>
+</html>

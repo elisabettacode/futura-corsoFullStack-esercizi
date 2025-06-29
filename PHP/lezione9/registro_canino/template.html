@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro canino</title>
+        <meta charset="UTF-8">
+        <style>
+            td {
+            border: 1px solid;
+            border-color:lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registro canino</h1>
+        <p>Puoi visualizzare il registro, inserire, modificare, cancellare i dati</p>
+        <table>{{tabella}}</table>
+        <br>
+        <form action="index.php" method="post">
+            <input type="text" name="nome" placeholder="Nome" required {{value-nome}}>
+            <input type="text" name="anno" placeholder="Anno di nascita" required {{value-anno}}>
+            {{id}}
+            <br>
+            <input type="submit" value="Invia">
+        </form>
+    </body>
+</html>
+
